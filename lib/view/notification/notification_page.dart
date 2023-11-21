@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rallis/controller/home_controller.dart';
-import 'package:rallis/repositories/common/category_bean.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/dummy_data.dart';
-import 'package:rallis/utils/constant/string_const.dart';
-import 'package:rallis/utils/global/widget_helper.dart';
+import 'package:kissanmitr/controller/home_controller.dart';
+import 'package:kissanmitr/repositories/common/category_bean.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/dummy_data.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
 
 class NotificationPage extends GetView<HomeController> {
   const NotificationPage({Key? key}) : super(key: key);

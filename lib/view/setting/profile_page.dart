@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:rallis/utils/common/widget_helper.dart';
-import 'package:rallis/utils/constant/api_constant.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/constant/api_constant.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -31,7 +31,7 @@ class ProfilePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: getTxtAppColor(
-                          msg: 'Deepak Sharma',
+                          msg: 'Mudit Rai',
                           fontWeight: FontWeight.bold,
                           fontSize: 18),
                     ),

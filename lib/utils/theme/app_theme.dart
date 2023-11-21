@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/theme/text_style.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/theme/text_style.dart';
 
 ThemeData lightThemeData(BuildContext context) {
   return ThemeData(
@@ -20,8 +20,11 @@ ThemeData lightThemeData(BuildContext context) {
       unselectedLabelColor: Colors.grey,
       indicatorSize: TabBarIndicatorSize.tab,
       labelStyle: AppTextStyle.normalBlack12,
-    ), colorScheme: const ColorScheme.light(
-        primary: ColorConst.appColor, secondary: ColorConst.appColor).copyWith(background: const Color.fromARGB(255, 255, 255, 255)).copyWith(error: ColorConst.redColor),
+    ),
+    colorScheme: const ColorScheme.light(
+            primary: ColorConst.appColor, secondary: ColorConst.appColor)
+        .copyWith(background: const Color.fromARGB(255, 255, 255, 255))
+        .copyWith(error: ColorConst.redColor),
   );
 }
 
@@ -36,6 +39,9 @@ ThemeData darkThemeData(BuildContext context) {
     shadowColor: Theme.of(context).disabledColor,
     dividerColor: const Color(0xff707070),
     canvasColor: Colors.white,
-    visualDensity: VisualDensity.adaptivePlatformDensity, colorScheme: const ColorScheme.dark().copyWith(background: Colors.black).copyWith(error: ColorConst.redColor),
+    visualDensity: VisualDensity.adaptivePlatformDensity,
+    colorScheme: const ColorScheme.dark()
+        .copyWith(background: Colors.black)
+        .copyWith(error: ColorConst.redColor),
   );
 }

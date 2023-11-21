@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rallis/controller/home_controller.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/string_const.dart';
+import 'package:kissanmitr/controller/home_controller.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
 
 class SurveyPage extends GetView<HomeController> {
   const SurveyPage({Key? key}) : super(key: key);

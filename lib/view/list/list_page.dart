@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:get/get.dart';
-import 'package:rallis/controller/home_controller.dart';
-import 'package:rallis/repositories/common/category_bean.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/dummy_data.dart';
-import 'package:rallis/utils/constant/routers_const.dart';
-import 'package:rallis/utils/constant/string_const.dart';
-import 'package:rallis/utils/global/widget_helper.dart';
-import 'package:rallis/view/details/detail_page.dart';
+import 'package:kissanmitr/controller/home_controller.dart';
+import 'package:kissanmitr/repositories/common/category_bean.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/dummy_data.dart';
+import 'package:kissanmitr/utils/constant/routers_const.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
+import 'package:kissanmitr/view/details/detail_page.dart';
 
 class ListPage extends GetView<HomeController> {
   String title = 'Nature';

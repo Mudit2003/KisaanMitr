@@ -1,9 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
-import 'package:rallis/utils/apiutils/api_response.dart';
-import 'package:rallis/utils/sp/sp_manager.dart';
+
 import 'package:intl/intl.dart';
+import 'package:kissanmitr/utils/apis/api_response.dart';
+import 'package:kissanmitr/utils/shared_preference/sp_manager.dart';
+
 //  {START PAGE NAVIGATION}
 void navigationPush(BuildContext context, StatefulWidget route) {
   Navigator.push(context, MaterialPageRoute(
@@ -46,6 +48,7 @@ Color colorFromHex(String hexColor) {
   final hexCode = hexColor.replaceAll('#', '');
   return Color(int.parse('FF$hexCode', radix: 16));
 }
+
 // HexColor("#D26661").withOpacity(0.1);
 class HexColor extends Color {
   static int _getColorFromHex(String hexColor) {
@@ -60,17 +63,18 @@ class HexColor extends Color {
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
 }
 
-
 logout() {
   SPManager.clearPref();
   // navigationRemoveAllPush(ctx, LoginPage());
 }
-delay({double durationSec = 1, required Function click}){
-  int sec =  (durationSec*1000).toInt();
+
+delay({double durationSec = 1, required Function click}) {
+  int sec = (durationSec * 1000).toInt();
   Future.delayed(Duration(milliseconds: sec), () {
     click();
   });
 }
+
 String getddMMMMyyyy(DateTime dateTime) {
   return DateFormat('dd-MMMM-yyyy').format(dateTime);
 }
@@ -80,15 +84,16 @@ String getddMMyyyy(DateTime dateTime) {
 }
 
 final logger = Logger();
-printLog({String tag = "", required String msg, ApiStatus status = ApiStatus.success}){
+printLog(
+    {String tag = "",
+    required String msg,
+    ApiStatus status = ApiStatus.success}) {
   if (kDebugMode) {
     print("$tag : $msg");
-    if(status ==ApiStatus.error) {
+    if (status == ApiStatus.error) {
       logger.e("$tag : $msg");
-    }else{
+    } else {
       logger.d("$tag : $msg");
     }
   }
 }
-
-

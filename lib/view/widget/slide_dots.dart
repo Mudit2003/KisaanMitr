@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rallis/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
 
 class SlideDots extends StatelessWidget {
   bool isActive;

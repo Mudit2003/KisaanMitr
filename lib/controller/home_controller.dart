@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:rallis/repositories/repo/home_repo.dart';
+import 'package:kissanmitr/repositories/repo/home_repo.dart';
 
 class HomeController extends GetxController {
   static HomeController get to => Get.find();

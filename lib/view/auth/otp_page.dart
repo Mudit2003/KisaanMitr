@@ -4,12 +4,10 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pinput/pinput.dart';
-import 'package:rallis/controller/login_controller.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/routers_const.dart';
-import 'package:rallis/utils/global/widget_helper.dart';
-
-/// Author : Deepak sharma(webaddicted)
+import 'package:kissanmitr/controller/login_controller.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/routers_const.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
 
 class OtpPage extends GetView<LoginController> {
   final _pinPutController = TextEditingController();

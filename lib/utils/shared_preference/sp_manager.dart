@@ -1,6 +1,6 @@
-import 'package:rallis/data/common/user_info.dart';
-import 'package:rallis/utils/constant/pref_const.dart';
-import 'package:rallis/utils/sp/sp_helper.dart';
+import 'package:kissanmitr/repositories/common/user_info.dart';
+import 'package:kissanmitr/utils/constant/pref_const.dart';
+import 'package:kissanmitr/utils/shared_preference/sp_helper.dart';
 
 class SPManager {
   static void setUserInfo<T>(UserIno user) async {

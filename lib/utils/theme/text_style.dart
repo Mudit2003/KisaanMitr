@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:rallis/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+
 // Text(
 // "Favorite Categories",
 // style: AppTextStyle.mediumBlack14
@@ -93,8 +94,6 @@ class AppTextStyle {
     fontWeight: FontWeight.normal,
   );
 
-
-
   static const TextStyle normalAppColor8 = TextStyle(
     color: ColorConst.appColor,
     fontSize: kIsWeb ? 8 : 11,
@@ -137,9 +136,6 @@ class AppTextStyle {
     fontWeight: FontWeight.normal,
   );
 
-
-
-
   static const TextStyle normalGrey8 = TextStyle(
     color: ColorConst.grey,
     fontSize: kIsWeb ? 8 : 11,
@@ -181,10 +177,4 @@ class AppTextStyle {
     fontSize: kIsWeb ? 20 : 23,
     fontWeight: FontWeight.normal,
   );
-
-
-
-
-
-
 }

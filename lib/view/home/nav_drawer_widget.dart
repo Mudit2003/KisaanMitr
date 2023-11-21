@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:rallis/controller/home_controller.dart';
-import 'package:rallis/utils/common/widget_helper.dart';
-import 'package:rallis/utils/constant/api_constant.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/routers_const.dart';
+import 'package:kissanmitr/controller/home_controller.dart';
+import 'package:kissanmitr/utils/constant/api_constant.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/routers_const.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
 
 class NavDrawerWidget extends GetView<HomeController> {
   const NavDrawerWidget({Key? key}) : super(key: key);
@@ -48,8 +48,7 @@ class NavDrawerWidget extends GetView<HomeController> {
                               width: 80),
                           const SizedBox(height: 10.0),
                           getTxtBlackColor(
-                              msg:
-                                  "Deepak Sharma\ndeepaksharma040695@gmail.com",
+                              msg: "Mudit Rai",
                               fontWeight: FontWeight.bold,
                               textAlign: TextAlign.center)
                         ],

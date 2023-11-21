@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rallis/controller/home_controller.dart';
-import 'package:rallis/data/common/category_bean.dart';
-import 'package:rallis/utils/common/widget_helper.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/dummy_data.dart';
-import 'package:rallis/utils/constant/routers_const.dart';
-
-/// Author : Deepak Sharma(Webaddicted)
-/// Email : deepaksharmatheboss@gmail.com
-/// Profile : https://github.com/webaddicted
+import 'package:kissanmitr/controller/home_controller.dart';
+import 'package:kissanmitr/repositories/common/category_bean.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/dummy_data.dart';
+import 'package:kissanmitr/utils/constant/routers_const.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
 
 class CircleCategoryItem extends StatelessWidget {
   String title = '';

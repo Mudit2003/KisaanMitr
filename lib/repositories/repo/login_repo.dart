@@ -1,4 +1,4 @@
-import 'package:rallis/repositories/repo/base_repo.dart';
+import 'package:kissanmitr/repositories/repo/base_repo.dart';
 
 class LoginRepo extends BaseRepo {
   allCity(String employeeId) async {

@@ -1,12 +1,11 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rallis/controller/home_controller.dart';
-import 'package:rallis/data/common/category_bean.dart';
-import 'package:rallis/utils/common/widget_helper.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/dummy_data.dart';
-import 'package:rallis/utils/constant/string_const.dart';
+import 'package:kissanmitr/controller/home_controller.dart';
+import 'package:kissanmitr/repositories/common/category_bean.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/dummy_data.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
 
 class OrderHistoryPage extends GetView<HomeController> {
   const OrderHistoryPage({Key? key}) : super(key: key);
@@ -32,14 +31,15 @@ class OrderHistoryPage extends GetView<HomeController> {
       ],
     );
   }
+
   Widget getList() {
-    var list =categoryBean();
+    var list = categoryBean();
     return ListView.builder(
       shrinkWrap: true,
       padding: EdgeInsets.zero,
       physics: const BouncingScrollPhysics(),
       scrollDirection: Axis.vertical,
-      itemCount:  list.length ,
+      itemCount: list.length,
       itemBuilder: (BuildContext context, int index) {
         return getNotiWidget(
             onTap: (int index, CategoryBean list) {
@@ -51,9 +51,10 @@ class OrderHistoryPage extends GetView<HomeController> {
       },
     );
   }
-  Widget getNotiWidget({onTap,CategoryBean? list, int? index}) {
+
+  Widget getNotiWidget({onTap, CategoryBean? list, int? index}) {
     var color = ColorConst.yellowColor;
-      color = ColorConst.redColor;
+    color = ColorConst.redColor;
     return InkWell(
       onTap: () {
         // onTap(index, list);
@@ -67,8 +68,9 @@ class OrderHistoryPage extends GetView<HomeController> {
             Container(height: 135, color: color, width: 5),
             Container(
                 alignment: Alignment.centerLeft,
-                margin: const EdgeInsets.only(left: 10,top: 10),
-                child: getCacheImage(url: list!.url.toString(), width: 90,height: 120)),
+                margin: const EdgeInsets.only(left: 10, top: 10),
+                child: getCacheImage(
+                    url: list!.url.toString(), width: 90, height: 120)),
             Padding(
               padding: const EdgeInsets.only(left: 115.0, right: 8, top: 8),
               child: Column(
@@ -87,25 +89,20 @@ class OrderHistoryPage extends GetView<HomeController> {
                           fontWeight: FontWeight.w600,
                           fontSize: 16),
                       getTxtBlackColor(
-                          msg:
-                          "${StringConst.RUPEE_SYMBOL} 5000",
+                          msg: "${StringConst.RUPEE_SYMBOL} 5000",
                           fontWeight: FontWeight.w600,
                           fontSize: 16),
                     ],
                   ),
                   const SizedBox(height: 5),
-                  getTxtBlackColor(
-                      msg:
-                      "Order Qty: 5"),
+                  getTxtBlackColor(msg: "Order Qty: 5"),
+                  const SizedBox(height: 5),
+                  getTxtBlackColor(msg: "Prduct Size : XXL"),
                   const SizedBox(height: 5),
                   getTxtBlackColor(
-                      msg:
-                      "Prduct Size : XXL"),
-                  const SizedBox(height: 5),
-                    getTxtBlackColor(
-                        msg:
-                        "Booking Status : In-Complete",fontWeight: FontWeight.w600,
-                        fontSize: 16),
+                      msg: "Booking Status : In-Complete",
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16),
                   const SizedBox(height: 5),
                   Align(
                       alignment: Alignment.topRight,

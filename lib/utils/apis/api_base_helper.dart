@@ -3,10 +3,10 @@ import 'dart:io';
 
 // import 'package:alice/alice.dart';
 import 'package:dio/dio.dart';
-import 'package:rallis/utils/constant/api_constant.dart';
-import 'package:rallis/utils/constant/string_const.dart';
-import 'package:rallis/utils/global/global_utilities.dart';
-import 'package:rallis/utils/shared_preference/shared_preference_service.dart';
+import 'package:kissanmitr/utils/constant/api_constant.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/global/global_utilities.dart';
+import 'package:kissanmitr/utils/shared_preference/shared_preference_service.dart';
 
 /// Helper class for configuring Api calls
 class ApiBaseHelper {

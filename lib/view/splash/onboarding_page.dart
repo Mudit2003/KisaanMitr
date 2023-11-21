@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:rallis/utils/constant/assets_const.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/routers_const.dart';
-import 'package:rallis/utils/constant/string_const.dart';
-import 'package:rallis/utils/global/widget_helper.dart';
-import 'package:rallis/view/widget/slide_dots.dart';
+import 'package:kissanmitr/utils/constant/assets_const.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/routers_const.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
+import 'package:kissanmitr/view/widget/slide_dots.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});

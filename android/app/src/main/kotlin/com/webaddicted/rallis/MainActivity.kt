@@ -1,4 +1,4 @@
-package com.webaddicted.rallis
+package com.kissanseva.kissanmitr
 
 import io.flutter.embedding.android.FlutterActivity
 

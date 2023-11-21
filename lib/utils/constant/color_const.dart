@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rallis/utils/global/global_utilities.dart';
+import 'package:kissanmitr/utils/global/global_utilities.dart';
 
 class ColorConst {
   // "63FF90"

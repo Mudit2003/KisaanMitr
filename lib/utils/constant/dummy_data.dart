@@ -1,4 +1,4 @@
-import 'package:rallis/repositories/common/category_bean.dart';
+import 'package:kissanmitr/repositories/common/category_bean.dart';
 
 List<CategoryBean> categoryBean() => [
       CategoryBean('Abstract', '',

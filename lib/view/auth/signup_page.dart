@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rallis/utils/constant/assets_const.dart';
-import 'package:rallis/utils/constant/routers_const.dart';
-import 'package:rallis/utils/constant/string_const.dart';
-import 'package:rallis/utils/global/global_utilities.dart';
-import 'package:rallis/utils/global/validation_helper.dart';
-import 'package:rallis/utils/global/widget_helper.dart';
+import 'package:kissanmitr/utils/constant/assets_const.dart';
+import 'package:kissanmitr/utils/constant/routers_const.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/global/global_utilities.dart';
+import 'package:kissanmitr/utils/global/validation_helper.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});

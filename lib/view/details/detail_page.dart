@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:get/get.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/dummy_data.dart';
-import 'package:rallis/utils/constant/routers_const.dart';
-import 'package:rallis/utils/constant/string_const.dart';
-import 'package:rallis/utils/global/widget_helper.dart';
-import 'package:rallis/view/widget/horizontal_list_ltem.dart';
-import 'package:rallis/view/widget/rating_result.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/dummy_data.dart';
+import 'package:kissanmitr/utils/constant/routers_const.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
+import 'package:kissanmitr/view/widget/horizontal_list_ltem.dart';
+import 'package:kissanmitr/view/widget/rating_result.dart';
 
 class DetailPage extends StatefulWidget {
   const DetailPage({Key? key}) : super(key: key);

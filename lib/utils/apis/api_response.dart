@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:rallis/utils/apis/api_base_helper.dart';
-import 'package:rallis/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/apis/api_base_helper.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
 
 /// Wrapper class for Api Response
 class ApiResponse<T> {

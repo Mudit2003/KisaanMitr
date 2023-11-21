@@ -1,7 +1,3 @@
-/// Author : Deepak sharma(webaddicted)
-/// Email : deepaksharmatheboss@gmail.com
-/// Profile : https://github.com/webaddicted
-
 class UserIno {
   String customerId = '';
   String name = '';
@@ -13,17 +9,8 @@ class UserIno {
   String cityId = '';
   String centerId = '';
 
-
-  UserIno(
-      this.customerId,
-      this.name,
-      this.email,
-      this.dob,
-      this.mobile,
-      this.address,
-      this.customerImage,
-      this.cityId,
-      this.centerId);
+  UserIno(this.customerId, this.name, this.email, this.dob, this.mobile,
+      this.address, this.customerImage, this.cityId, this.centerId);
 
   UserIno.fromJson(Map<String, dynamic> json) {
     customerId = json["customer_id"];

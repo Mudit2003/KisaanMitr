@@ -1,14 +1,13 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:rallis/utils/common/validation_helper.dart';
-import 'package:rallis/utils/common/widget_helper.dart';
-import 'package:rallis/utils/constant/assets_const.dart';
-import 'package:rallis/utils/constant/color_const.dart';
-import 'package:rallis/utils/constant/routers_const.dart';
-import 'package:rallis/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/constant/assets_const.dart';
+import 'package:kissanmitr/utils/constant/color_const.dart';
+import 'package:kissanmitr/utils/constant/routers_const.dart';
+import 'package:kissanmitr/utils/constant/string_const.dart';
+import 'package:kissanmitr/utils/global/validation_helper.dart';
+import 'package:kissanmitr/utils/global/widget_helper.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
